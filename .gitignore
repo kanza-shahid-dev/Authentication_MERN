@@ -30,3 +30,13 @@ backend/dist-ssr/
 *.njsproj
 *.sln
 *.sw?
+
+
+/backend/.env
+*.env
+
+# Ignore any .env anywhere
+*.env
+
+# Or specifically ignore backend/.env
+/backend/.env
