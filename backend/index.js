@@ -28,9 +28,11 @@ const PORT = process.env.PORT || 5001;
 
 app.use("/api/auth", authRoutes);
 
+console.log("__dirname", __dirname);
+
 app.use(express.static(path.join(__dirname, "frontend/build")));
 app.use((req, res) => {
-  res.sendFile(path.join(__dirname, "../frontend", "build", "index.html"));
+  res.sendFile(path.resolve(__dirname, "../frontend/build", "index.html"));
 });
 
 app.listen(PORT, () => {
