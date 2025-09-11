@@ -1,7 +1,7 @@
 import { useContext } from "react"
 import Button from "./Button"
-import { UserContext } from "../context/userContext"
 import { Link, useNavigate } from "react-router-dom"
+import { UserContext } from "../context/UserContext"
 
 export const Header = () => {
     const { user } = useContext(UserContext)

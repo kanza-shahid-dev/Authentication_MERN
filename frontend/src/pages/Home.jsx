@@ -1,6 +1,6 @@
 import { useContext } from "react"
 import { Header } from "../components/Header"
-import { UserContext } from "../context/userContext"
+import { UserContext } from "../context/UserContext"
 
 function Home() {
     const { user } = useContext(UserContext)
