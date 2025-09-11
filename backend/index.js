@@ -31,7 +31,7 @@ app.use("/api/auth", authRoutes);
 console.log("__dirname", __dirname);
 
 app.use(express.static(path.join(__dirname, "frontend/build")));
-app.use((req, res) => {
+app.get(/.*/, (req, res) => {
   res.sendFile(path.resolve(__dirname, "../frontend/build", "index.html"));
 });
 
