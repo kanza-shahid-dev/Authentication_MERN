@@ -8,4 +8,7 @@ export default defineConfig({
   server: {
     port: 3000,
   },
+  build: {
+    outDir: "build", // 👈 ensure Vite outputs to build/
+  },
 });
