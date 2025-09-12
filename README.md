@@ -1,4 +1,3 @@
-# Authentication_MERN
 
 An authentication system built using the MERN stack (MongoDB, Express, React, Node.js). It handles user registration, login, JWT‐based authentication, and frontend / backend integration.  
 
